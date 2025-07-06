@@ -1,4 +1,9 @@
 package com.syntaxzero.shopease.service;
 
-public class CategoryService {
+import com.syntaxzero.shopease.dto.CategoryDTO;
+import java.util.List;
+
+public interface CategoryService {
+    CategoryDTO createCategory(CategoryDTO dto);
+    List<CategoryDTO> getAllCategories();
 }

@@ -1,4 +1,9 @@
 package com.syntaxzero.shopease.service;
 
-public class AddressService {
+import com.syntaxzero.shopease.dto.AddressDTO;
+import java.util.List;
+
+public interface AddressService {
+    AddressDTO addAddress(AddressDTO dto);
+    List<AddressDTO> getUserAddresses(Long userId);
 }

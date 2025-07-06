@@ -1,4 +1,7 @@
 package com.syntaxzero.shopease.service;
 
-public class PaymentService {
+import com.syntaxzero.shopease.dto.PaymentDTO;
+
+public interface PaymentService {
+    PaymentDTO makePayment(PaymentDTO dto);
 }
